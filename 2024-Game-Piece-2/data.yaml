@@ -1,0 +1,12 @@
+names:
+- note
+nc: 1
+roboflow:
+  license: Public Domain
+  project: 2024-game-piece
+  url: https://universe.roboflow.com/frc-3707/2024-game-piece/dataset/2
+  version: 2
+  workspace: frc-3707
+test: test/images
+train: train/images
+val: valid/images
