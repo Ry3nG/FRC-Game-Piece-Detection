@@ -8,7 +8,7 @@ def setup_model():
 
 def train_model(model, data_yaml_path):
     # train the model
-    results = model.train(data = data_yaml_path, epochs = 3,imgsz = 640, batch = 16, name = 'frc_yolov8n')
+    results = model.train(data = data_yaml_path, epochs = 100,imgsz = 640, batch = 64, name = 'frc_yolov8n')
     return results
 
 def validate_model(model):
