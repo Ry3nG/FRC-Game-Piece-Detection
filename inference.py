@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 
-def process_video(input_path, output_path, model_path, conf_threshold=0.5):
+def process_video(input_path, output_path, model_path, conf_threshold=0.25):
     # Load the YOLOv8 model
     model = YOLO(model_path)
 

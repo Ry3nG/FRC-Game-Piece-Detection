@@ -12,10 +12,10 @@ def train_model(model, data_yaml_path):
         data=data_yaml_path,
         epochs=500,  # Increase the number of epochs
         imgsz=640,
-        batch=32,  # Adjust batch size based on your GPU memory
+        batch=64,  # Adjust batch size based on your GPU memory
         name='frc_yolov8l',  
         optimizer='Adam',  # Try using Adam optimizer
-        lr0=0.001,  # Initial learning rate
+        lr0=0.0001,  # Initial learning rate
         augment=True  # Enable data augmentation
     )
     return results
