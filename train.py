@@ -10,7 +10,7 @@ def train_model(model, data_yaml_path):
     # Train the model with augmented dataset and tuned hyperparameters
     results = model.train(
         data=data_yaml_path,
-        epochs=200,  # Increase the number of epochs
+        epochs=500,  # Increase the number of epochs
         imgsz=640,
         batch=32,  # Adjust batch size based on your GPU memory
         name='frc_yolov8l',  

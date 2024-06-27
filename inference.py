@@ -49,8 +49,10 @@ def process_video(input_path, output_path, model_path, conf_threshold=0.5):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    input_path = "C:\\Users\\Nomla\\Desktop\\FRC\\FRC-Game-Piece-Detection\\video\\input\\FRC 9483 Robot POV - 2024 Milstein Q67.mp4"
-    output_path = "C:\\Users\\Nomla\\Desktop\\FRC\\FRC-Game-Piece-Detection\\video\\output\\output.mp4"
-    model_path = "C:\\Users\\Nomla\\Desktop\\FRC\\FRC-Game-Piece-Detection\\runs\\detect\\frc_yolov8n3\\weights\\best.pt"
+    input_path = "video\\input\\FRC 9483 Robot POV - 2024 Milstein Q67.mp4"
+    output_path = "video\\output\\output.mp4"
+    model_path = "runs/detect/frc_yolov8n3/weights/best.pt"
 
+    print("Starting ... ")
     process_video(input_path, output_path, model_path)
+    print("Finished")
